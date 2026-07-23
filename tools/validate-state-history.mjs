@@ -30,7 +30,8 @@ function blockAt(text, start) {
 }
 
 function provinceIds(text) {
-  return [...text.matchAll(/x[0-9A-F]{6}/gi)].map((match) => match[0].toUpperCase());
+  const withoutComments = text.replace(/#.*$/gm, '');
+  return [...withoutComments.matchAll(/x[0-9A-F]{6}/gi)].map((match) => match[0].toUpperCase());
 }
 
 const regionRoot = join(gameRoot, 'map_data', 'state_regions');
@@ -60,7 +61,8 @@ for (const file of filesIn(historyRoot).filter((path) => path.endsWith('.txt')))
       failures.push(`${file}: ${state} is not defined by the target game map`);
       continue;
     }
-    for (const provinces of block.matchAll(/\bowned_provinces\s*=\s*\{([\s\S]*?)\}/g)) {
+    const script = block.replace(/#.*$/gm, '');
+    for (const provinces of script.matchAll(/\bowned_provinces\s*=\s*\{([\s\S]*?)\}/g)) {
       for (const province of provinceIds(provinces[1])) {
         const actualRegion = provinceRegions.get(province);
         if (!actualRegion) failures.push(`${file}: ${state} references unknown province ${province}`);

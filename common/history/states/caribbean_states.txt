@@ -54,7 +54,7 @@ STATES = {
 		create_state = {
 			country = c:GBR
 			owned_provinces = { 
-				x72C072 x4EBC79 x686279 # BAH
+				x72C072 x4EBC79 x686279 x7A6FA3 # BAH
 			}
 			state_type = unincorporated
 		}
@@ -88,6 +88,7 @@ STATES = {
 			country = c:NET
 			owned_provinces = { 
 				xECC061 # Sint Maarten
+				xB03080 # Aruba & Curacao
 			}
 			state_type = unincorporated
 		}
@@ -113,7 +114,6 @@ STATES = {
 				x70F001 # DMC
 				x89334D # AAB
 				x89337A # SKN
-				x7A6FA3 # TCI
 			 }
 			state_type = unincorporated
 		}
