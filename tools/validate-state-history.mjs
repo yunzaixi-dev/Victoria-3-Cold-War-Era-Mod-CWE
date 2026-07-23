@@ -39,7 +39,7 @@ const knownRegions = new Set();
 
 for (const file of filesIn(regionRoot).filter((path) => path.endsWith('.txt'))) {
   const text = readFileSync(file, 'utf8');
-  for (const match of text.matchAll(/^STATE_([A-Z0-9_]+)\s*=\s*\{/gm)) {
+  for (const match of text.matchAll(/^\uFEFF?STATE_([A-Z0-9_]+)\s*=\s*\{/gm)) {
     const region = `STATE_${match[1]}`;
     const block = blockAt(text, match.index);
     const provinces = block.match(/\bprovinces\s*=\s*\{([\s\S]*?)\}/)?.[1] ?? '';

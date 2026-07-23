@@ -58,7 +58,7 @@ STATES = {
 			owned_provinces = {  
 			 	x8436FE
 				xB08F60 x9EDF3C x2197EF x314190 x034B03  xE5DF3B x8B1488 x2576C1 x6290E6 x49FCAB xB79DED x9E941B x00E3EF x1A7BB0
-				xCF401E xBB387A xDD033C x68B524 xEF2E43 x075453 x9D8A78 xFE5027 x02F9FF x625380 x7EC879 x7C3EA9 xE5892F xB090A0 xCF6C49 x84FA60 xF86F58
+				xCF401E xBB387A xDD033C x68B524 xEF2E43 x075453 x9D8A78 xFE5027 x02F9FF x625380 x7EC879 x7C3EA9 xE5892F xCF6C49 x84FA60 xF86F58
 			 }
 		}
 		
@@ -149,15 +149,6 @@ STATES = {
 		add_claim = c:TUR add_homeland = cu:turkish
 		add_claim = c:GRE add_homeland = cu:greek
 	}
-	s:STATE_ISTANBUL = {
-		create_state = {
-			country = c:TUR
-			owned_provinces = { xF0A020 x30A060 }
-		}
-
-		add_claim = c:TUR add_homeland = cu:turkish
-		add_claim = c:GRE add_homeland = cu:greek
-	}
 	s:STATE_HUDAVENDIGAR = {
 		create_state = {
 			country = c:TUR
@@ -224,14 +215,6 @@ STATES = {
 		create_state = {
 			country = c:TUR
 			owned_provinces = { x39B060 x409000 x098D9C x29D9AF x5F00C0 x25499A xE17847 x66B13B xCAF12B x15BC1F x5D2F75 x7DD19B x8E9935 x895D6B x0BD6EC xB556A0 x785849 x967F78 x17B19B xC09000 xF470A0 xA8674E x3041CC x3E9653 x431F60 x30A0E0 xC29DFD x180265 xEB1F97 x04F350 x03F8EA x62FAA8 x401080 x964F97 x8713CE xCB8C83 x1A75C7 x465D69 x0D1D4E }
-		}
-		
-		add_claim = c:TUR add_homeland = cu:turkish
-	}
-	s:STATE_KAYSERI = {
-		create_state = {
-			country = c:TUR
-			owned_provinces = { x9FFCAB xBACCB8 x70373E x25499A x967F78 x7DD19B x3041CC x15BC1F x5D2F75 x3E9653 xC09000  x602629 x8E9935 x180265 xC29DFD x0D1D4E x465D69 x1A75C7 xCB8C83 x964F97 x62FAA8 xEB1F97 x0BD6EC x785849 x17B19B xA8674E x401080 xF470A0 x431F60 x04F350 x03F8EA}
 		}
 		
 		add_claim = c:TUR add_homeland = cu:turkish
