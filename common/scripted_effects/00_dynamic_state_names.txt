@@ -1,0 +1,6 @@
+﻿# CWE defines states and hubs that predate the 1.13 dynamic-naming graph.
+# Keep the stable default names until the custom map data is migrated.
+REPLACE_OR_CREATE:evaluate_and_assign_state_hub_dynamic_names = {
+	reset_state_name = yes
+	reset_hub_names = yes
+}
