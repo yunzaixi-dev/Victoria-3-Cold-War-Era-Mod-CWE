@@ -493,7 +493,7 @@
 				size = 1400
 			}
 			create_pop = {
-				culture = lazi
+				culture = georgian
 				size = 1090
 			}
 			create_pop = {

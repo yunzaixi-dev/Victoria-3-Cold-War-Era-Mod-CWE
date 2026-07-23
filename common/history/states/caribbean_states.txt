@@ -101,6 +101,10 @@ STATES = {
 			state_type = unincorporated
 		}
 		create_state = {
+			country = c:VNZ
+			owned_provinces = { x1D9B6B xF07001 }
+		}
+		create_state = {
 			country = c:GBR
 			owned_provinces = { 
 				x606060 #British Virgin Islands

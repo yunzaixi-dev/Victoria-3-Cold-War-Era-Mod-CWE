@@ -1022,7 +1022,7 @@
 				size = 4124
 			}
 			create_pop = {
-				culture = lazi
+				culture = georgian
 				size = 4985
 			}
 			create_pop = {
@@ -1147,7 +1147,7 @@
 				size = 10946
 			}
 			create_pop = {
-				culture = lazi
+				culture = georgian
 				size = 1854
 			}
 		}
@@ -1247,7 +1247,7 @@
 				size = 2843
 			}
 			create_pop = {
-				culture = lazi
+				culture = georgian
 				size = 91649
 			}
 			create_pop = {
